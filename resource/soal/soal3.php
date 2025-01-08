@@ -6,7 +6,7 @@
         <div class="col-8">    
             <div class="card">
                 <div class="card-body">
-                   
+                
                 </div>
             </div>
         </div>
