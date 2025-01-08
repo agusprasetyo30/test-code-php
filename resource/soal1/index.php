@@ -46,6 +46,8 @@
                             <h4 id="output_fault_tolerance">-</h4>
                         </div>
                     </div>
+
+                    <button onclick="resetInput()" class="btn btn-warning w-100">Reset Input</button>
                 </div>
             </div>
         </div>

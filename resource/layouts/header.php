@@ -10,7 +10,8 @@
 			<meta http-equiv="X-UA-Compatible" content="ie=edge">
 			<title><?= $title ?></title>
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
-			<link rel="stylesheet" href="../../dist/css/style.css">
+			<link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.15.10/dist/sweetalert2.min.css" rel="stylesheet">
+			<link rel="stylesheet" href="/test-code-php/dist/css/style.css">
 		</head>
 		<body>
 		<nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
@@ -22,13 +23,13 @@
 			<div class="collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
 					<li class="nav-item ">
-						<a class="nav-link <?= strpos($_SERVER['REQUEST_URI'], 'soal1') ? 'active' : ''  ?>" href="./">Soal 1 </a>
+						<a class="nav-link <?= strpos($_SERVER['REQUEST_URI'], 'soal1') ? 'active' : ''  ?>" href="/test-code-php/resource/soal1/">Soal 1 </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./">Soal 2</a>
+						<a class="nav-link" href="/test-code-php/resource/soal2/">Soal 2</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="./">Soal 3</a>
+						<a class="nav-link" href="/test-code-php/resource/soal3/">Soal 3</a>
 					</li>
 				</ul>
 			</div>

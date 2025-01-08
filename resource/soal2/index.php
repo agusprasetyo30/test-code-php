@@ -110,5 +110,11 @@
 
             $('#table_soal2').remove()
         })
+    
+        
+			// toast.fire({
+			// 	icon: 'success',
+			// 	title: 'melkan 123'
+			// })
     })
 </script>

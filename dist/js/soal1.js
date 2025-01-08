@@ -105,3 +105,12 @@ function outputFaultToleranceCount(raid_type) {
     }
 
 }
+
+function resetInput() {
+    $('#number_of_disk').val('')
+    $('#raid_type option:eq(0)').prop('selected', true)
+    $('#size_per_disk option:eq(0)').prop('selected', true)
+    $('.raid_type_output').html('-')
+    $('#output_capacity').html('-')
+    $('#output_fault_tolerance').html('-')
+}

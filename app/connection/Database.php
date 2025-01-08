@@ -1,5 +1,5 @@
 <?php
-class Conn {
+class Database {
 	public $conn;
 
 	/**
@@ -10,7 +10,7 @@ class Conn {
 		$hostname   = 'localhost';
 		$username   = 'agusprasetyo30';
 		$password   = 'gokpras123';
-		$database   = 'test-code-php';
+		$database   = 'lawancovid';
 
 		$this->conn = mysqli_connect($hostname, $username, $password, $database);
 	}
@@ -23,7 +23,7 @@ class Conn {
 	 */
 	function query($query) : array
 	{
-		$result = mysqli_query($this->conn, $query);
+		$result = $this->conn->query($query);
 		$rows = [];
 		while ($data = mysqli_fetch_assoc($result)) {
 		$rows[] = $data;
@@ -32,9 +32,18 @@ class Conn {
 	}
 
 	/**
+	 * Digunakan untuk eksekusi transaction data
+	 * @param mixed $query
+	 * @return bool|mysqli_result
+	 */
+	function queryTransaction($query) {
+		return $this->conn->query($query);
+	}
+
+	/**
 	 * Digunakan untuk identifikasi halaman route agar lebih simpel
 	 *
-	 * @return void
+	 * @return 
 	 */
 	function getUrlBase()
 	{
