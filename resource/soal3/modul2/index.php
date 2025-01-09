@@ -3,7 +3,8 @@
 
     include_once(__DIR__ . '/../../../app/data/Karyawan.php');
     include_once(__DIR__ . '/../../../app/helpers/Pagination.php');
-    require ('../../../dist/library/Carbon/autoload.php');
+    include_once(__DIR__ . '/../../../app/helpers/General.php');
+    include_once ('../../../dist/library/Carbon/autoload.php');
 
     use Carbon\Carbon;
     use Carbon\CarbonInterval;

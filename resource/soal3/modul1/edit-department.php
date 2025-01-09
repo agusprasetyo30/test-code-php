@@ -51,10 +51,3 @@
         }
 	}
 ?>
-
-<script>
-    $(document).ready(function() {   
-        // window.location.href = "<?=$department->getUrlBase()?>"
-        // $('#kocak').append('<h2>yahahhha</h2>')
-    })
-</script>

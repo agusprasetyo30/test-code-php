@@ -1,5 +1,5 @@
 <?php 
-    include(__DIR__ . '/../../app/helpers/General.php');
+    include_once(__DIR__ . '/../../app/helpers/General.php');
 
     $error = "";
     $dimension = "";

@@ -1,4 +1,9 @@
 <?php
+    include_once(__DIR__ . "../../../dist/library/Carbon/autoload.php");
+
+    use Carbon\Carbon;
+    use Carbon\CarbonInterval;
+
 class General {
     /**
      * membuat table berbentuk belah ketupat
@@ -88,5 +93,38 @@ class General {
         }
 
         return $temp_letter;
+    }
+
+    
+    /**
+     * Digunakan untuk menghitung masa kerja, ex : 4 tahun 5 bulan
+     *``
+     * @param mixed $masa_kerja
+     * @return string
+     */
+    public static function countDiffMasaKerja($masa_kerja) {
+        $tanggal_sekarang = Carbon::now();
+        $masa_kerja = Carbon::parse($masa_kerja);
+
+        // Hitung diff
+        $diff = $tanggal_sekarang->diff($masa_kerja);
+
+        // memisahkan years and months
+        $years = $diff->y;
+        $months = $diff->m;
+
+        // menggabungkan input tahun dan bulan
+        $output = '';
+        if ($years > 0) {
+            $output .= $years . ' tahun ';
+        }
+        if ($months > 0) {
+            $output .= $months . ' bulan';
+        }
+
+        // Trim any trailing space
+        $output = trim($output);
+
+        return $output;
     }
 }
