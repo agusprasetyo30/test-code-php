@@ -26,10 +26,10 @@
 						<a class="nav-link <?= strpos($_SERVER['REQUEST_URI'], 'soal1') ? 'active' : ''  ?>" href="/test-code-php/resource/soal1/">Soal 1 </a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/test-code-php/resource/soal2/">Soal 2</a>
+						<a class="nav-link <?= strpos($_SERVER['REQUEST_URI'], 'soal2') ? 'active' : ''  ?>" href="/test-code-php/resource/soal2/">Soal 2</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="/test-code-php/resource/soal3/">Soal 3</a>
+						<a class="nav-link <?= strpos($_SERVER['REQUEST_URI'], 'soal3') ? 'active' : ''  ?>" href="/test-code-php/resource/soal3/">Soal 3</a>
 					</li>
 				</ul>
 			</div>
