@@ -8,8 +8,8 @@ class Database {
 	function __construct()
 	{
 		$hostname   = 'localhost';
-		$username   = 'agusprasetyo30';
-		$password   = 'gokpras123';
+		$username   = 'root';
+		$password   = '';
 		$database   = 'lawancovid';
 
 		$this->conn = mysqli_connect($hostname, $username, $password, $database);
