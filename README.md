@@ -32,7 +32,7 @@
 <p align="center">Soal 2<p>
 <br>
 
-<img src="./soal 3 index.jpg">
+<img src="./Soal 3 index.jpg">
 <p align="center">Soal 3 Index<p>
 <br>
 
